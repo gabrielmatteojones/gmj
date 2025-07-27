@@ -54,3 +54,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  collections:
+    news:
+      output: true
+      permalink: /news/:path/
+
