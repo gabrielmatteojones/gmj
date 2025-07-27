@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: pege
 title: Accento Civico
 description: pagina principale
 lang: it
