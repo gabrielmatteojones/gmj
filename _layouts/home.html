@@ -17,9 +17,12 @@ layout: default
           <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-top-m gridNews-item">
             <div class="u-nbfc u-border-all-xxs u-color-grey-30 u-background-white">
               <article>
-                {% if post.image %}
-                  <img class="u-sizeFull" alt="{{ post.title }}" src="{{ post.image }}" style="height:220px;">
-                {% endif %}
+{% if post.image %}
+  <img class="u-sizeFull" alt="{{ post.title }}" src="{{ post.image }}" style="height:220px;">
+{% else %}
+  <img class="u-sizeFull" alt="{{ post.title }}" src="/cdn/media/png/copertina1.png" style="height:220px;">
+{% endif %}
+
                 <div class="u-text-r-l u-padding-r-all u-layout-prose">
                   {% if post.category %}
                     <p class="u-text-h6 u-margin-bottom-l">
