@@ -8,12 +8,17 @@ layout: default
       <a href="javascript:void(0);" class="u-block u-text-h3 u-textClean">Eventi e News</a>
     </h3>
   </div>
-</div>
+</div><div class="container" id="block4">
+  <div class="block-title">
+    <h3 class="u-border-bottom-m u-text-h4 u-margin-r-bottom u-text-r-m u-color-black u-textWeight-400 block-title-italia u-color-60" style="text-align:center;">
+      <a href="javascript:void(0);" class="u-block u-text-h3 u-textClean">Eventi e News</a>
+    </h3>
+  </div>
 
   <div class="u-text-r-l u-padding-r-all u-nbfc u-background-white block-italia u-borderShadow-xxs block-content block-content-news">
     <div class="u-layout-wide u-layoutCenter gridNews">
       <section class="Grid Grid--withGutter u-padding-all-l">
-        {% assign posts = site.news | sort: 'date' | reverse %}
+        {% assign posts = site.posts | sort: 'date' | reverse %}
         {% for post in posts limit: 8 %}
           <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-margin-top-m gridNews-item">
             <div class="u-nbfc u-border-all-xxs u-color-grey-30 u-background-white">
@@ -49,7 +54,7 @@ layout: default
     </div>
 
     <div class="u-text-md-right u-text-lg-right u-margin-r-top u-margin-top-l u-color-50 u-text-h4">
-      <a class="u-color-50 u-textClean u-text-h4" href="{{ site.baseurl }}/news/feed.xml" target="_blank">
+      <a class="u-color-50 u-textClean u-text-h4" href="{{ site.baseurl }}/feed.xml" target="_blank">
         <img alt="Rss" src="/c054035/immagini/Rss.png" style="vertical-align: middle!important; margin-bottom:4px;"> Segui il feed
       </a>
       &nbsp;|&nbsp;<a class="u-color-50 u-textClean u-text-h4" href="{{ site.baseurl }}/news/">tutti i contenuti <em class="Icon Icon-chevron-right"></em></a>
