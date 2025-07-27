@@ -54,8 +54,9 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-  collections:
-    news:
-      output: true
-      permalink: /news/:path/
 
+# ✅ Collezione "news" correttamente posizionata
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
